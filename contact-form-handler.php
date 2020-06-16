@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['submit'])){
+    if(isset($_POST['send'])){
         $user = $_POST['user'];
         $mailFrom = $_POST['email'];
         $enquiry = $_POST['enquiry'];
