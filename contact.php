@@ -66,7 +66,7 @@
 
                 <form class="contact-form" action="contact-form-handler.php" method="post" enctype="text/plain">
                     <label for="Enquiry">Name</label>
-                    <input type="text" name="name" class="contact-form-text" placeholder="Your name">
+                    <input type="text" name="user" class="contact-form-text" placeholder="Your name">
                     <label for="Enquiry">Email</label>
                     <input type="text" name="email" class="contact-form-text" placeholder="Your email">
 
