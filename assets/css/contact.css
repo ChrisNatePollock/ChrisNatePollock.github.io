@@ -1,0 +1,12 @@
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 1;
+    padding: 20px 40px;
+}
+
+.contact-form-btn{
+    float: right;
+}
