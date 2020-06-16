@@ -64,14 +64,14 @@
                 <h2 style="text-align: center;">Contact <strong style="color: rgb(30, 115, 190);">BI Reel</strong>
                 </h2>
 
-                <form class="contact-form" method="POST" data-netlify="true" netlify enctype="text/plain">
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
                     <label for="Enquiry">Name</label>
                     <input type="text" name="user" class="contact-form-text" placeholder="Your name">
                     <label for="Enquiry">Email</label>
                     <input type="text" name="email" class="contact-form-text" placeholder="Your email">
 
                     <label for="Enquiry">Enquiry Type</label>
-                    <Select name="enquiry">
+                    <Select name="enquiry[]">
                         <option value="none" selected disabled hidden>Enquiry Type</option>
                         <option value="Consulting">Consulting</option>
                         <option value="Design & Develop">Design & Develop</option>
