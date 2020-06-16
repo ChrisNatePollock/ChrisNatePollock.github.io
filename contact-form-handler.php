@@ -7,7 +7,7 @@
     $email_subject = "BI Reel - Contact Form Submission!"
     $email_body = "User Name: $name. \n User Email: $visitor_email. \n User Message: $message. \n"
 
-    $to = "christopherpollock@bireel.com";
+    $to = "chrisnatepollock@gmail.com";
 
     $headers = "From: $visitor_email \r\n";
 
