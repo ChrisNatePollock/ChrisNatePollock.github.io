@@ -66,9 +66,9 @@
 
                 <form class="contact-form" action="mailto:christopherpollock@bireel.com" method="post" enctype="text/plain">
                     <label for="Enquiry">Name</label>
-                    <input type="text" class="contact-form-text" placeholder="Your name">
+                    <input type="text" name="name" class="contact-form-text" placeholder="Your name">
                     <label for="Enquiry">Email</label>
-                    <input type="text" class="contact-form-text" placeholder="Your email">
+                    <input type="text" name="email" class="contact-form-text" placeholder="Your email">
 
                     <label for="Enquiry">Enquiry Type</label>
                     <Select name="Enquiry">
@@ -76,7 +76,7 @@
                         <option value="Consulting">Consulting</option>
                         <option value="Design & Develop">Design & Develop</option>
                     </Select>
-                    <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                    <textarea class="contact-form-text" name="message" placeholder="Your message"></textarea>
                     <input type="submit" class="contact-form-btn" value="Send">
                 </form>
                 <br>
