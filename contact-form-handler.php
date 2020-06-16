@@ -1,17 +1,16 @@
 <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $enquiry = $_POST['enquiry'];
-    $message = $_POST['message'];
+    if(isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $mailFrom = $_POST['email'];
+        $enquiry = $_POST['enquiry'];
+        $message = $_POST['message'];
 
-    $email_subject = "BI Reel - Contact Form Submission!"
-    $email_body = "User Name: $name. \n User Email: $visitor_email. \n User Message: $message. \n"
+        $subject = "BI Reel - ".$enquiry.": Please follow up!";
+        $mailTo = "christopherpollock@bireel.com";
+        $headers = "From: ".$mailFrom;
+        $txt = "You have recieved an email from ".$name.".\n\n".$message;
 
-    $to = "chrisnatepollock@gmail.com";
-
-    $headers = "From: $visitor_email \r\n";
-
-    mail($to,$email_subject,$email_body,$headers);
-
-    header("Location: contact.html");
+        mail($mailTo, $subject, $txt, $headers);
+        header("Location: index.html");
+    }
 ?>
