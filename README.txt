@@ -3,3 +3,5 @@ A portfolio website to demonstrate various business intelligence & data analytic
 The website contains an interactive report embedded in the page at the top.
 
 Additional articles have blurbs about the data analytics and are provided to open a live application upon click within a new tab.
+
+Courses, Consulting & Contact Pages are available to reach out.
