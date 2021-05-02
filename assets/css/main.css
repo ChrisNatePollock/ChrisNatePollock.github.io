@@ -3572,6 +3572,8 @@ input, select, textarea {
 				#header .logo {
 					font-size: 1.75rem;
 					border-width: 3px !important;
+					display:inline-block;
+					margin-top: 1rem;
 				}
 
 		}
