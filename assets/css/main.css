@@ -3463,6 +3463,10 @@ input, select, textarea {
 
 		}
 
+.title {
+	color: #18bfef;
+}
+
 /* Header */
 
 	#header {
@@ -3537,7 +3541,9 @@ input, select, textarea {
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			pointer-events: auto;
 			border-style: solid;
-			border-color: #ffffff;
+			color: white;
+			text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.5), 0 0 0.5em currentColor;
+			border-color: #18bfef;
 			border-width: 5px !important;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-size: 2.25rem;
@@ -3547,6 +3553,26 @@ input, select, textarea {
 			padding: 1rem 1.75rem;
 			text-transform: uppercase;
 			visibility: visible;
+			box-shadow: inset 0 0 1em 0 #18bfef, 0 0 1em 0 #18bfef;
+			position: relative;
+		}
+
+		.logo::before {
+			content: "";
+			position: absolute;
+			background: #18bfef;
+			top: 120%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+			filter: blur(2em);
+			opacity: 0.7;
+		}
+
+		.logo:hover::after {
+			opacity: 1;
 		}
 
 			#header .logo:hover {
